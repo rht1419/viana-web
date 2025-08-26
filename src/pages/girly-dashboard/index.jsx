@@ -122,8 +122,8 @@ const GirlyDashboard = () => {
                   {activeEvent?.celebration_theme || 'Birthday'} Celebration
                 </p>
               </div>
-              
-              <CountdownTimer 
+
+              <CountdownTimer
                 targetDate={getNextBirthdayDate()}
                 onBirthdayReached={() => {
                   // Handle birthday reached
@@ -133,15 +133,25 @@ const GirlyDashboard = () => {
 
             {/* Dashboard Overview removed */}
 
+            {/* Recent Memories Title and Empty State */}
+            <h3 className="text-3xl font-bold text-gray-800 mb-6 text-center">Recent Memories</h3>
+            <div className="text-center py-12">
+              <div className="text-6xl mb-4">📸</div>
+              <h4 className="text-2xl font-bold text-gray-700 mb-4">No memories yet</h4>
+              <p className="text-gray-600 mb-8 max-w-md mx-auto">
+                Start creating beautiful memories! Share photos, videos, and heartfelt messages to build your family's digital scrapbook.
+              </p>
+            </div>
+
             {/* Quick Actions */}
-            <QuickActions 
+            <QuickActions
               user={user}
               onSignInClick={() => setShowAuthModal(true)}
               eventId={activeEvent?.id}
             />
 
             {/* Recent Memories */}
-            <RecentMemories 
+            <RecentMemories
               memories={recentMemories}
               loading={loading}
               user={user}
