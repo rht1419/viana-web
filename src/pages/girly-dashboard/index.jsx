@@ -123,45 +123,12 @@ const GirlyDashboard = () => {
                 </p>
               </div>
 
-              {/* Animated pulse dots */}
-              <div className="flex justify-center mt-8">
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse"></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse ml-2" style={{ animationDelay: '0.3s' }}></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse ml-2" style={{ animationDelay: '0.6s' }}></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse ml-2" style={{ animationDelay: '0.9s' }}></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse ml-2" style={{ animationDelay: '1.2s' }}></div>
-              </div>
-
               <CountdownTimer
                 targetDate={getNextBirthdayDate()}
                 onBirthdayReached={() => {
                   // Handle birthday reached
                 }}
               />
-
-              {/* Video after countdown */}
-              <div className="flex flex-col relative mt-5 min-h-[20px] min-w-[20px] w-full">
-                <div className="relative">
-                  <video
-                    autoPlay
-                    muted
-                    controls={false}
-                    playsInline
-                    loop
-                    className="w-full h-full object-cover object-center rounded relative flex flex-col mt-5 min-h-[20px] min-w-[20px]"
-                  >
-                    <source
-                      type="video/mp4"
-                      src="https://cdn.builder.io/o/assets%2F5d168eace88f439db401e797ccc44aae%2F2f44fe159c3c4fc88432142f5089fb81?alt=media&token=d587e941-9105-4c32-a771-49e85f4d39e5&apiKey=5d168eace88f439db401e797ccc44aae"
-                    />
-                  </video>
-                  <div className="w-full pt-[70.04048582995948%] pointer-events-none text-[0px]"></div>
-                </div>
-              </div>
-
-              <div className="flex flex-col relative mt-5 pointer-events-auto">
-                <div>Invalid url, please try another</div>
-              </div>
             </section>
 
             {/* Dashboard Overview removed */}
