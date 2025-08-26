@@ -120,21 +120,6 @@ const QuickActions = ({ user, onSignInClick, eventId }) => {
       </div>
       {/* User status info */}
       <div className="mt-6 text-center">
-        {user ? (
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-50 border border-green-200 rounded-full">
-            <span className="text-green-600">✅</span>
-            <span className="text-green-700 text-sm font-medium">
-              Welcome back, {user?.email?.split('@')?.[0]}!
-            </span>
-          </div>
-        ) : (
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full">
-            <span className="text-blue-600">ℹ️</span>
-            <span className="text-blue-700 text-sm">
-              Sign in to unlock all features and create memories
-            </span>
-          </div>
-        )}
       </div>
     </section>
   );
