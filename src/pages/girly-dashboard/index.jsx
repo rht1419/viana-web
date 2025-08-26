@@ -176,26 +176,6 @@ const GirlyDashboard = () => {
               </p>
             </div>
 
-            {/* Video after memories */}
-            <div className="flex flex-col relative mt-5 min-h-[20px] min-w-[20px] w-full">
-              <div className="relative">
-                <video
-                  autoPlay
-                  muted
-                  controls={false}
-                  playsInline
-                  loop
-                  className="w-full h-full object-cover object-center rounded relative flex flex-col mt-5 min-h-[20px] min-w-[20px]"
-                >
-                  <source
-                    type="video/mp4"
-                    src="https://cdn.builder.io/o/assets%2F5d168eace88f439db401e797ccc44aae%2F48d4d9fffebc41588884758587313e7c?alt=media&token=9ee3cced-2890-48bc-afa5-d9561cd18a17&apiKey=5d168eace88f439db401e797ccc44aae"
-                  />
-                </video>
-                <div className="w-full pt-[70.04048582995948%] pointer-events-none text-[0px]"></div>
-              </div>
-            </div>
-
             {/* Quick Actions */}
             <QuickActions
               user={user}
