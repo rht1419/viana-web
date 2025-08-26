@@ -171,7 +171,7 @@ const CountdownTimer = ({ targetDate, onBirthdayReached }) => {
             The big day is here. Let's celebrate this precious milestone!
           </p>
           <div className="flex justify-center gap-4 mb-10">
-            {['🎂', '🎈', '✨', '🎁', '💖']?.map((emoji, index) => (
+            {['🎂', '🎈', '✨', '���', '💖']?.map((emoji, index) => (
               <div
                 key={index}
                 className="text-3xl md:text-4xl animate-bounce"
@@ -221,15 +221,6 @@ const CountdownTimer = ({ targetDate, onBirthdayReached }) => {
               style={{ animationDelay: `${index * 0.5}s` }}
             ></div>
           </div>
-        ))}
-      </div>
-      <div className="mt-8 flex justify-center space-x-2">
-        {Array.from({ length: 5 })?.map((_, i) => (
-          <div
-            key={i}
-            className="w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse"
-            style={{ animationDelay: `${i * 0.3}s` }}
-          ></div>
         ))}
       </div>
     </div>
