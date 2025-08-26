@@ -49,6 +49,14 @@ const BirthdayCountdownLandingPage = () => {
 
       {/* Let global dark neon background show through */}
       <div className="relative min-h-[200vh]">
+        {/* Animated Butterflies Background */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <img
+            src="https://cdn.builder.io/o/assets%2F5d168eace88f439db401e797ccc44aae%2F5798c6efed314a98bacf5fd3f837f4b0?alt=media&token=90f16287-6a33-4442-9fc1-1458feb1c858&apiKey=5d168eace88f439db401e797ccc44aae"
+            alt="Animated butterflies"
+            className="w-full h-full object-cover opacity-30 animate-gentle-float"
+          />
+        </div>
         <div className="relative z-10">
           {/* Section 1: Top - Countdown Timer (replaces COUNTDOWN text) */}
           <div className="min-h-screen flex flex-col items-center justify-start pt-16 md:pt-24 px-4">
